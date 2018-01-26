@@ -14,6 +14,8 @@ class thermostat:
     def checkTemp(self, temp):
         if not (isinstance(temp, float) or isinstance(temp, int)):
             raise ValueError("temp must be a number")
+        if not (temp > 0 and temp < 100):
+            raise ValueError("temp should be between 0 and 100")
 
     def getTemp(self):
         return self._temp
