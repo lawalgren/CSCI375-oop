@@ -30,7 +30,7 @@ public class smartThermostat extends thermostat{
         testState();
     }
 
-    public void testState() {
+    private void testState() {
         if(currentTemp < super.getTemp())
             state = thermostatMode.HEAT;
         else if(currentTemp > super.getTemp())

@@ -41,7 +41,7 @@ class smartThermostatTest extends thermostatTest {
     }
 
     @Test
-    void testTestState() {
+    void testState() {
         smartThermostat unit = new smartThermostat();
         unit.setCurrentTemp(95);
         thermostatMode expResult = thermostatMode.COOL;
