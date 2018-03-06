@@ -13,11 +13,11 @@ namespace thermostat {
         public: Thermostat();
         public: Thermostat(int _temp, tempType _type, fanSpeed _speed);
 
-        public: int getTemp() const ;
-        public: tempType getTempType() const ;
-        public: fanSpeed getFanSpeed() const ;
-        public: void setTemp(int _temp);
-        public: void setTempType(tempType _type);
-        public: void setFanSpeed(fanSpeed _speed);
+        public: virtual int getTemp() const ;
+        public: virtual tempType getTempType() const ;
+        public: virtual fanSpeed getFanSpeed() const ;
+        public: virtual void setTemp(int _temp);
+        public: virtual void setTempType(tempType _type);
+        public: virtual void setFanSpeed(fanSpeed _speed);
     };
 }
