@@ -3,7 +3,7 @@ package ServantExample;
 public class FastAnt implements Movable {
 
     private Direction dir;
-    private Position position;
+    private Position position = new Position();
 
     public FastAnt(Direction _dir) {
        dir = _dir;

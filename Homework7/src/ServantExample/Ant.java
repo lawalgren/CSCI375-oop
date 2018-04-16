@@ -2,7 +2,7 @@ package ServantExample;
 
 public class Ant implements Movable {
     private Direction dir;
-    private Position pos;
+    private Position pos = new Position();
 
     public Ant(Direction _dir) {
         dir = _dir;

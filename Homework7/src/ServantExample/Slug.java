@@ -2,7 +2,7 @@ package ServantExample;
 
 public class Slug implements Movable{
 
-    private Position  position;
+    private Position  position = new Position();
     private Direction dir;
 
     public Slug(Direction _dir) {

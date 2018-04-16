@@ -16,6 +16,7 @@ public class MoveServant {
             ypos -= speed;
         pos.xposition = xpos;
         pos.yposition = ypos;
+        serviced.setPosition(pos);
     }
     public void walkTo(Movable serviced, Position position) {
         serviced.setPosition(position);
