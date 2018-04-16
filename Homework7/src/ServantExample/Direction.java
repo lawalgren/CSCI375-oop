@@ -1,5 +1,5 @@
 package ServantExample;
 
-enum Direction {
-    LEFT, RIGHT
+public enum Direction {
+    LEFT, RIGHT, UP, DOWN
 }

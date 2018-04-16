@@ -1,26 +1,22 @@
 package ServantExample;
 
-public class Ant implements Movable {
+public class Slug implements Movable{
+
+    private Position  position;
     private Direction dir;
-    private Position pos;
 
-    public Ant(Direction _dir) {
-        dir = _dir;
-    }
-
-    @Override
-    public void setDirection(Direction _dir) {
+    public Slug(Direction _dir) {
         dir = _dir;
     }
 
     @Override
     public Position getPosition() {
-        return pos;
+        return position;
     }
 
     @Override
     public void setPosition(Position _position) {
-       pos = _position;
+        position = _position;
     }
 
     @Override
@@ -31,5 +27,10 @@ public class Ant implements Movable {
     @Override
     public Direction getDirection() {
         return dir;
+    }
+
+    @Override
+    public void setDirection(Direction _dir) {
+        dir = _dir;
     }
 }
