@@ -30,7 +30,5 @@ public class Slug implements Movable{
     }
 
     @Override
-    public void setDirection(Direction _dir) {
-        dir = _dir;
-    }
+    public void setDirection(Direction _dir) {}
 }
