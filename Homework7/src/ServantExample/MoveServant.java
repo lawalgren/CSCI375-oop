@@ -23,7 +23,11 @@ public class MoveServant {
     public void turnAround(Movable serviced) {
         if (serviced.getDirection() == Direction.LEFT)
             serviced.setDirection(Direction.RIGHT);
-        else
+        else if(serviced.getDirection() == Direction.RIGHT)
             serviced.setDirection(Direction.LEFT);
+        else if(serviced.getDirection() == Direction.UP)
+            serviced.setDirection(Direction.DOWN);
+        else
+            serviced.setDirection(Direction.UP);
     }
 }

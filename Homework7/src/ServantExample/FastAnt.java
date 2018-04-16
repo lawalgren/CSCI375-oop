@@ -4,6 +4,7 @@ public class FastAnt implements Movable {
 
     private Direction dir;
     private Position position;
+
     public FastAnt(Direction _dir) {
        dir = _dir;
     }
